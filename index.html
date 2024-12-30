@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Mata Links</title>
+
+        <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Mata Links" />
+        <link rel="manifest" href="images/site.webmanifest" />
+
+        <link rel="stylesheet" id="main" href="style.css" type="text/css" media="all" />
+    </head>
+<body>
+    <main id="main">
+
+        <header class="header">
+            <img src="images/logo.svg" alt="" class="logo" />
+            <h1 class="logo">Mata links</h1>
+            <p>Matar enlaces automáticos al construir plantillas de correos.</p>
+            <button class="fillForm void" style="max-width: 17ch;">Ver un ejemplo</button>
+        </header>
+
+        <section id="URL">
+            <form name="myForm" id="myForm">
+                <label for="userURL">Ingresa tu URL</label>
+                <input type="text" class="grabURL" name="userURL" id="userURL" tabindex="0" autocomplete="off" placeholder="ej. www.google.cl/link" />
+                <button type="button" class="clear">&times;</button>
+                <span role="tooltip">Ingresa tu enlace sin https:// o http:// al inicio</span>
+            </form>
+        </section>
+
+        <aside id="mainContent">
+            <section class="box hero">
+                
+                <header class="stepHeader">
+                    <span class="stepHeader__num">1</span>
+                    <h3 class="stepHeader__title">Código HTML</h3>
+                </header>
+
+                <p>Esta es la versión para copiar y pegar en el código de fuente HTML sin formato.</p>
+
+                <div class="mail">
+                    <textarea type="text" id="codeOut" rows="4" placeholder="Aquí saldrá el código…" readonly></textarea>
+                </div>
+                <button id="getCode" class="action copy html disabled">Copiar código HTML</button>
+
+            </section>
+
+            <section class="box hero"> 
+                <header class="stepHeader">
+                    <span class="stepHeader__num">2</span>
+                    <h3 class="stepHeader__title">Visual WYSIWYG</h3>
+                </header>
+            <p>Esta es la versión para copiar y pegar directamente en el editor visual de tu plataforma.</p>
+                <div id="outputHTML" contenteditable="true">Aquí saldrá el código…</div>  
+            <button id="getCodeMC" class="action copy mc disabled">Copiar código Visual</button>
+            </section>
+
+        </aside> 
+
+    </main> 
+
+    <footer class="footer">
+        Hecho con &hearts; por <a href="https://darriagada.com/?rel=mata-links">@notdarriagada</a>
+    </footer>
+    </main>
+<div id="snackbar"></div>
+<script type="text/javascript" src="main.js"></script>
+</body>    
+</html>
